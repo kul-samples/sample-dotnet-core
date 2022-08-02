@@ -27,4 +27,4 @@ jobs:
         uses: kul-samples/ms-teams-notification@v1.3
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}   
-          message: "GitHub Action number ${{ github.run_number }} for ${{ github.repository }} triggered by ${{ github.actor }} is complted with ${{ needs.build.status }} status." 
+          message: "GitHub Action number ${{ github.run_number }} for ${{ github.repository }} triggered by ${{ github.actor }} is complted with ${{ needs.build.result }} status." 
