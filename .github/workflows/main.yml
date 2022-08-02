@@ -19,7 +19,6 @@ jobs:
     - name: list current directory
       run: |
         dotnet build
-        exit 1
   notify:
     runs-on: ubuntu-latest
     if: failure()
