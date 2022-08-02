@@ -24,8 +24,7 @@ jobs:
       - build
     steps:
       - name: send notification
-        uses: kul-samples/ms-teams-notification@v1.0
+        uses: kul-samples/ms-teams-notification@v1.1
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}   
           message: "This is from custom actions created." 
-          
