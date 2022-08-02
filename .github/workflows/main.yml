@@ -22,6 +22,7 @@ jobs:
         exit 1
   notify:
     runs-on: ubuntu-latest
+    if: failure()
     needs:
       - build
     steps:
