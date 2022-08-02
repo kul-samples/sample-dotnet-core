@@ -21,7 +21,7 @@ jobs:
         dotnet build
   notify:
     runs-on: ubuntu-latest
-    if: failure()
+    if: always()
     needs:
       - build
     steps:
